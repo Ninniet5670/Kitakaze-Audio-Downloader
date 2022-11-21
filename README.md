@@ -44,3 +44,9 @@ erro no git fixed: https://stackoverflow.com/questions/29902967/rebase-in-progre
 
 
 fui bobinho de novo e acabei botando o id do meu telegram invés de pegar automaticamente do usuário requisitado, é o SONO
+
+inclusive seria bom eu dar uma olhada no git rebase que achei um comando interessante
+
+
+
+fui mudar o nome da pasta por que tava o nome antigo e deu uma \*\**\*\* enorme com a venv do python e mexeu até com bagulho de permissão de arquivo então deixo aqui meu reminder de NUNCA MAIS fazer isso por que deu um trabalho cansativo instalar os pacotes tudo de novo 

@@ -5,21 +5,16 @@ import youtube_dl
 
 load_dotenv()
 
-API_KEY = os.getenv('API_KEY')
 DOWNLOADABLE = False
 
-bot = telebot.TeleBot(API_KEY)
+bot = telebot.TeleBot(os.getenv('API_KEY'))
 
 
 @bot.message_handler(commands=['start', 'help'])
 def responder(mensagem):
     global USER_ID
 
-    bot.reply_to(mensagem,
-        '''
-        /baixarmp3 Baixa seu vídeo em mp3
-
-        ''')
+    bot.reply_to(mensagem, '''/baixarmp3 Baixa seu vídeo em mp3''')
     USER_ID = mensagem.chat.id
 
 
@@ -35,7 +30,7 @@ def baixar_mp3(mensagem):
     DOWNLOADABLE = True
 
 
-def downloadable(self):
+def downloadable():
     if DOWNLOADABLE:
         return True
     else:
